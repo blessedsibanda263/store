@@ -29,6 +29,8 @@
       <%= button_to 'Log out', session_path, method: :delete if authenticated? %>
       <%= link_to 'Log in', new_session_path unless authenticated? %>
     </nav>
-    <%= yield %>
+    <main>
+      <%= yield %>
+    </main>
   </body>
 </html>
